@@ -1,11 +1,12 @@
 import React from 'react';
 import './styles.css';
+import { Container } from 'react-bootstrap';
 
 export const HomeMolecule = () => {
     return (
-      <div>
+      <Container >
          HOME MOLECULE
-      </div>
+      </Container>
     
   );
 }

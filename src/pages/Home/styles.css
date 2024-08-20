@@ -1,0 +1,13 @@
+:root {
+    --background: #E9E9ED;
+    --message: #E9E9ED;
+    --input: #FF8B33;
+    --text: #000;
+}
+
+.dark {
+    --background: #494949;
+    --message: #636363;
+    --input: #F56A00;
+    --text: #fff;
+}
