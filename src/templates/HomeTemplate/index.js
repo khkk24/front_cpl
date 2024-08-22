@@ -6,7 +6,7 @@ import { HomeOrganism } from '../../organisms/HomeOrganism';
 export const HomeTemplate = () => {
     return (
 
-        <Container fluid className="home-container">
+        <Container fluid className="">
          
            
               <HomeOrganism />

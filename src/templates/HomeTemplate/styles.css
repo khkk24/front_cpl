@@ -4,8 +4,8 @@
     background-color: #f5f5f5;
 }
 
-.home-container {
-    background-color: var(--background);
+/* .home-container {
+    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -14,4 +14,4 @@
     min-height: 100vh;
 
 
-}
+} */

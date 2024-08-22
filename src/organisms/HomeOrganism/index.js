@@ -20,7 +20,7 @@ export const HomeOrganism = () => {
   }, []);
 
   return (
-    <Container fluid className="home-container">
+    <Container fluid className="">
       <TopBar
         darkmode={darkmode}
         handleDarkMode={handleDarkMode}
