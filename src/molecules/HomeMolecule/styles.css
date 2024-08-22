@@ -1,0 +1,46 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+    max-width: 700px;
+
+    margin-bottom: 64px;
+}
+
+.imagem {
+    margin-bottom: 12%;
+}
+
+.descrição {
+    margin-left: 20px;
+    background-color: #fafafa;
+    border-radius: 70px;
+    padding: 30px;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+
+
+}
+
+.mascot-image {
+    width: 200px;
+    height: auto;
+    margin-top: 1px;
+
+}
+
+.history-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: #F96302;
+    cursor: pointer;
+}

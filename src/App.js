@@ -2,12 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import AppRouter from '../src/routes/AppRouter';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
+    <Container fluid className='home-container'>
       <AppRouter />
-    </div>
+    </Container>
   );
 }
 

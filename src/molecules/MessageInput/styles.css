@@ -1,0 +1,23 @@
+.botaoIcone {
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+}
+
+.message-container {
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    place-items: center;
+    width: 100%;
+    max-width: 700px;
+    background-color: var(--input);
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 24px;
+}
+
+.send-icon {
+    color: white;
+    cursor: pointer;
+}

@@ -10,7 +10,7 @@ export const TopBar = ({ darkmode , handleDarkMode}) => {
     return (
       <Container className='top-bar'>
         <img src={logoCopel} alt="Logo Copel" className="logoHome" />
-        <button className='botaoIcone' onClick={handleDarkMode}>
+        <button onClick={handleDarkMode}>
             {darkmode ? <IoSunny className="moon-icon" /> : <IoIosMoon className="moon-icon" />}
         </button>
       </Container>

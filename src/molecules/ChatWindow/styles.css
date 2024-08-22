@@ -1,0 +1,83 @@
+:root {
+    --background: #E9E9ED;
+    --message: #E9E9ED;
+    --input: #FF8B33;
+    --text: #000;
+}
+
+.dark {
+    --background: #494949;
+    --message: #636363;
+    --input: #F56A00;
+    --text: #fff;
+}
+
+.chat-window {
+    width: 100%;
+    display: block;
+}
+
+.chat-message.user {
+    display: grid;
+    grid-template-columns: 48px 70%;
+    direction: ltr;
+    align-items: center;
+}
+
+.chat-message.bot {
+    display: grid;
+    grid-template-columns: 48px 70%;
+    direction: rtl;
+}
+
+.chat-message.bot img {
+    margin-top: 0.4rem;
+}
+
+.logo-message {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.chat-message.user .message-box {
+    background-color: var(--message);
+    color: var(--text);
+    display: grid;
+    grid-template-columns: 1fr 20px;
+}
+
+.chat-message.bot .message-box {
+    background-color: var(--message);
+    color: var(--text);
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    border: 1.3px solid;
+}
+
+.message-box.bot {
+    direction: ltr;
+}
+
+.message-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 8px;
+    padding: 8px;
+}
+
+.botaoIcone2 {
+    padding: 0;
+    width: 16px;
+    background: none;
+}
+
+.botaoIcone2:hover {
+    background-color: #e1ffc76b;
+}
