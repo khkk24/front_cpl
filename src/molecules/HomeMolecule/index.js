@@ -43,7 +43,7 @@ export const HomeMolecule = ({ setShowHistory, showHistory }) => {
   }, [messages]);
 
   return (
-    <Container fluid>
+    <Container fluid className='home-container'>
       <Row className="content align-items-center">
         {!messages.length && (
           <Col xs={12} className='text-center'>
