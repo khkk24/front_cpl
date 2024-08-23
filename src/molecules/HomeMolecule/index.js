@@ -45,17 +45,29 @@ export const HomeMolecule = ({ setShowHistory, showHistory }) => {
   return (
     <Container fluid className='home-container'>
       <Row className="content align-items-center">
-        {!messages.length && (
+        {/* {!messages.length && (
           <Col xs={12} className='text-center'>
             <Image src={Copelo} alt="Mascote Copel" className="mascot-image" fluid />
           </Col>
         )}
         {!messages.length && (
-          <Col xs={12} className='text-center mt-3'>
+          <Col xs={12} className='text-center mt-3 descrição'>
             <p className="description">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus massa in ullamcorper dignissim. Etiam.
             </p>
           </Col>
+        )} */}
+        {!messages.length && (
+        <>
+          <Col xs={12} md={6} className="d-flex justify-content-center">
+            <Image src={Copelo} alt="Mascote Copel" className="mascot-image" fluid />
+          </Col>
+          <Col xs={12} md={6} className="mt-3 descrição">
+            <p className="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus massa in ullamcorper dignissim. Etiam.
+            </p>
+          </Col>
+        </>
         )}
         <Col xs={12}>
           <ChatWindow messages={messages} handleRatings={handleRatings} />
@@ -66,8 +78,8 @@ export const HomeMolecule = ({ setShowHistory, showHistory }) => {
           <MessageInput inputValue={inputValue} setInputValue={setInputValue} handleSendMessage={handleSendMessage} />
         </Col>
         <Col xs={12} className="text-center mt-2">
-          <Button variant="link" className="history-icon" onClick={() => setShowHistory(!showHistory)}>
-            <FiAlignJustify />
+          <Button  variant='link' className="history-icon" onClick={() => setShowHistory(!showHistory)}>
+            <FiAlignJustify className="history-icon"/>
           </Button>
         </Col>
       </Row>

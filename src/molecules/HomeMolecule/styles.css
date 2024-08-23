@@ -1,12 +1,12 @@
 .content {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: left;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    /* text-align: left; */
     width: 100%;
     max-width: 700px;
-
-    margin-bottom: 64px;
+    margin-bottom: 60px;
+    /* background-color: aqua; */
 }
 
 .imagem {
@@ -14,23 +14,28 @@
 }
 
 .descrição {
-    margin-left: 20px;
+    /* margin-left: 20px; */
     background-color: #fafafa;
     border-radius: 70px;
-    padding: 30px;
-    width: 100%;
-    margin-bottom: 70px;
+    padding: 20px;
+    /* width: auto; */
+    /* width: 100%; */
+    margin-bottom: 0px;
+    margin-right: 0px;
+    
 }
 
 .description {
     font-size: 16px;
     color: #333;
+    margin-left: 20px;
+
 
 
 }
 
 .mascot-image {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin-top: 1px;
 
@@ -38,9 +43,10 @@
 
 .history-icon {
     position: fixed;
-    top: 20px;
-    left: 20px;
+    /* top: 20px; */
+    /* left: 20px; */
     font-size: 30px;
-    color: #F96302;
+    color: #F96302 !important;
     cursor: pointer;
+    ;
 }

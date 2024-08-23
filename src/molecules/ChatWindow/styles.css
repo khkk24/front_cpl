@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --background: #E9E9ED;
     --message: #E9E9ED;
     --input: #FF8B33;
@@ -10,9 +10,9 @@
     --message: #636363;
     --input: #F56A00;
     --text: #fff;
-}
+} */
 
-.chat-window {
+/* .chat-window {
     width: 100%;
     display: block;
 }
@@ -22,12 +22,15 @@
     grid-template-columns: 48px 70%;
     direction: ltr;
     align-items: center;
+    border-radius: 10px;
 }
 
 .chat-message.bot {
     display: grid;
     grid-template-columns: 48px 70%;
     direction: rtl;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .chat-message.bot img {
@@ -57,8 +60,11 @@
     background-color: var(--message);
     color: var(--text);
     display: grid;
-    grid-template-columns: 1fr 20px;
-    border: 1.3px solid;
+    grid-template-columns: 1fr 20px; */
+    /* border: 1.3px solid; */
+    /* border: 1px solid #ccc; 
+    padding: 10px;
+    border-radius: 20px;
 }
 
 .message-box.bot {
@@ -80,4 +86,121 @@
 
 .botaoIcone2:hover {
     background-color: #e1ffc76b;
+} */
+
+.chat-window {
+    width: 100%;
+    display: block;
+    padding: 20px;
 }
+
+.chat-message {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-message.user {
+    direction: ltr;
+}
+
+.chat-message.bot {
+    direction: rtl;
+}
+
+.message-box {
+    /* background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 0.5rem; */
+    /* border-radius: 8px; */
+    /* width: 100%; */
+    /* word-wrap: break-word; */
+    /* font-size: 14px; */
+    /* color: #333; */
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.chat-message.user .message-box{
+    background-color: var(--message);
+    color: var(--text);
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    word-wrap: break-word;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.chat-message.bot .message-box {
+    background-color: var(--message);
+    color: var(--text);
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    position: relative;
+    font-size: 14px;
+    word-wrap: break-word;
+    margin-bottom: 0.5rem;
+}
+
+.logo-message {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.message-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 8px 0;
+    margin-top: 8px;
+    column-gap: 8px;
+}
+
+.botaoIcone2 {
+    padding: 0;
+    width: 24px;
+    height: 15px;
+    background: none;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+}
+
+.botaoIcone2:hover {
+    background-color: #e1ffc76b;
+    
+}
+
+.menuOpcoes {
+    z-index: 1000;
+    /* background-color: #f1f1f1; */
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menuOpcoes span {
+    color: black;
+    margin-bottom: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+
