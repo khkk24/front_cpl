@@ -9,6 +9,7 @@ export const AutoResizingTextarea = ({ value, onChange, ...props }) => {
         if (textarea) {
             textarea.style.height = '40px';
             textarea.style.height = `${textarea.scrollHeight}px`;
+            
         }
     }, [value]);
 
