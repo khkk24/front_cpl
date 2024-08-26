@@ -43,20 +43,8 @@ export const HomeMolecule = ({ setShowHistory, showHistory }) => {
   }, [messages]);
 
   return (
-    <Container fluid className='home-container'>
+    <Container fluid className="">
       <Row className="content align-items-center">
-        {/* {!messages.length && (
-          <Col xs={12} className='text-center'>
-            <Image src={Copelo} alt="Mascote Copel" className="mascot-image" fluid />
-          </Col>
-        )}
-        {!messages.length && (
-          <Col xs={12} className='text-center mt-3 descrição'>
-            <p className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus luctus massa in ullamcorper dignissim. Etiam.
-            </p>
-          </Col>
-        )} */}
         {!messages.length && (
         <>
           <Col xs={12} md={6} className="d-flex justify-content-center">
@@ -69,12 +57,12 @@ export const HomeMolecule = ({ setShowHistory, showHistory }) => {
           </Col>
         </>
         )}
-        <Col xs={12}>
+        <Col xs={12} md={6}>
           <ChatWindow messages={messages} handleRatings={handleRatings} />
         </Col>
       </Row>
       <Row>
-        <Col xs={12}>
+        <Col xs={12} className=''>
           <MessageInput inputValue={inputValue} setInputValue={setInputValue} handleSendMessage={handleSendMessage} />
         </Col>
         <Col xs={12} className="text-center mt-2">

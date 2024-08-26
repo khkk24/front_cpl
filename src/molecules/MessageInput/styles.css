@@ -25,10 +25,10 @@
 .message-container {
     display: flex;
     align-items: center;
-    width: 90%; /* Adjust this value to control the overall width */
-    max-width: 500px; /* Adjust this value to make the container narrower */
+    width: 80%; /* Adjust this value to control the overall width */
+    max-width: 80%; /* Adjust this value to make the container narrower */
     background-color: var(--input);
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
     position: fixed;

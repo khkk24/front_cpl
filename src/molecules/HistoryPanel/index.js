@@ -13,23 +13,25 @@ export const HistoryPanel = ({ history, showHistory, toggleHistory }) => {
         {/* <Container fluid className={`history-panel ${showHistory ? 'd-block' : 'd-none'}`}> */}
           <ListGroup>
             {history.map((msg, index) => (
-              <ListGroup.Item key={index} className="history-item">
+              <ListGroup.Item key={index} className="history-item text-truncate w-100">
                 {msg.title}
               </ListGroup.Item>
             ))}
           </ListGroup>
-          <Col className='mt-3 botaoSair'>
+          <Row className=" icons-row">
+          {/* <Col className='mt-3 botaoSair'> */}
             <Col xs="auto" className='botaoIcone2'>
-              <Button  className='me-2'>
-                <i className='pi pi-question-circle'></i>
+              <Button  className='icon-button'>
+                <i className='pi pi-question-circle small-icon'></i>
               </Button>
             </Col>
             <Col xs="auto" className='botaoIcone2'>
-              <Button className='me-2'>
-                <i className='pi pi-sign-out'></i>
+              <Button className='icon-button'>
+                <i className='pi pi-sign-out small-icon'></i>
               </Button>
             </Col>
-          </Col>
+          {/* </Col> */}
+          </Row>
         </Container>
       )}
     </Container>

@@ -110,7 +110,7 @@
     direction: rtl;
 }
 
-.message-box {
+/* .message-box { */
     /* background-color: #f1f1f1;
     padding: 10px;
     margin-bottom: 0.5rem; */
@@ -120,7 +120,29 @@
     /* font-size: 14px; */
     /* color: #333; */
     /* border: 1px solid rgba(0, 0, 0, 0.1); */
+/* } */
+/* ------------------------------ */
+.message-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--message);
+    color: var(--text);
+    padding: 8px;
+    border-radius: 8px;
 }
+
+.message-box span {
+    flex-grow: 1; /* Prend tout l'espace disponible sauf celui de l'icône */
+}
+
+.message-box .pi-volume-up {
+    margin-left: auto;
+    padding-left: 8px;
+    color: var(--text);
+}
+
+/* ------------------------- */
 
 .chat-message.user .message-box{
     background-color: var(--message);
