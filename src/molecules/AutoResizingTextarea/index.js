@@ -7,7 +7,7 @@ export const AutoResizingTextarea = ({ value, onChange, ...props }) => {
     useEffect(() => {
         const textarea = textareaRef.current;
         if (textarea) {
-            textarea.style.height = '40px';
+            textarea.style.height = '20px';
             textarea.style.height = `${textarea.scrollHeight}px`;
             
         }
