@@ -7,7 +7,7 @@ import { AutoResizingTextarea } from '../../molecules/AutoResizingTextarea';
 
 export const MessageInput = ({inputValue, setInputValue, handleSendMessage}) => {
     return (
-      <Container className="message-container">
+      <Container fluid className="message-container">
             <button className='botaoIcone'>
                 <FaMicrophone />
             </button>

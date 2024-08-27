@@ -19,7 +19,7 @@ export const HistoryPanel = ({ history, showHistory, toggleHistory }) => {
             ))}
           </ListGroup>
           <Row className=" icons-row">
-          {/* <Col className='mt-3 botaoSair'> */}
+           <Col className='mt-3 botaoSair'> 
             <Col xs="auto" className='botaoIcone2'>
               <Button  className='icon-button'>
                 <i className='pi pi-question-circle small-icon'></i>
@@ -30,7 +30,7 @@ export const HistoryPanel = ({ history, showHistory, toggleHistory }) => {
                 <i className='pi pi-sign-out small-icon'></i>
               </Button>
             </Col>
-          {/* </Col> */}
+        </Col> 
           </Row>
         </Container>
       )}

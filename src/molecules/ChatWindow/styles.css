@@ -1,228 +1,141 @@
-/* :root {
-    --background: #E9E9ED;
-    --message: #E9E9ED;
-    --input: #FF8B33;
-    --text: #000;
-}
 
-.dark {
-    --background: #494949;
-    --message: #636363;
-    --input: #F56A00;
-    --text: #fff;
-} */
-
-/* .chat-window {
-    width: 100%;
-    display: block;
-}
-
-.chat-message.user {
-    display: grid;
-    grid-template-columns: 48px 70%;
-    direction: ltr;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.chat-message.bot {
-    display: grid;
-    grid-template-columns: 48px 70%;
-    direction: rtl;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.chat-message.bot img {
-    margin-top: 0.4rem;
-}
-
-.logo-message {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-}
-
-.message-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.chat-message.user .message-box {
-    background-color: var(--message);
-    color: var(--text);
-    display: grid;
-    grid-template-columns: 1fr 20px;
-}
-
-.chat-message.bot .message-box {
-    background-color: var(--message);
-    color: var(--text);
-    display: grid;
-    grid-template-columns: 1fr 20px; */
-    /* border: 1.3px solid; */
-    /* border: 1px solid #ccc; 
-    padding: 10px;
-    border-radius: 20px;
-}
-
-.message-box.bot {
-    direction: ltr;
-}
-
-.message-icons {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    column-gap: 8px;
-    padding: 8px;
-}
-
-.botaoIcone2 {
-    padding: 0;
-    width: 16px;
-    background: none;
-}
-
-.botaoIcone2:hover {
-    background-color: #e1ffc76b;
-} */
 
 .chat-window {
-    width: 100%;
-    display: block;
-    padding: 20px;
+  display: block;
+  width: 100%;
+  padding: 20px;
 }
 
 .chat-message {
-    display: grid;
-    grid-template-columns: 48px 1fr;
-    align-items: center;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  display: grid;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  grid-template-columns: 48px 1fr;
 }
 
 .chat-message.user {
-    direction: ltr;
+  direction: ltr;
 }
 
 .chat-message.bot {
-    direction: rtl;
+  direction: rtl;
 }
 
-/* .message-box { */
-    /* background-color: #f1f1f1;
-    padding: 10px;
-    margin-bottom: 0.5rem; */
-    /* border-radius: 8px; */
-    /* width: 100%; */
-    /* word-wrap: break-word; */
-    /* font-size: 14px; */
-    /* color: #333; */
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
-/* } */
-/* ------------------------------ */
+
+
 .message-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--message);
-    color: var(--text);
-    padding: 8px;
-    border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  color: var(--text);
+  background-color: var(--message);
+  border-radius: 8px;
 }
 
 .message-box span {
-    flex-grow: 1; /* Prend tout l'espace disponible sauf celui de l'icône */
+  flex-grow: 1;
 }
 
 .message-box .pi-volume-up {
-    margin-left: auto;
-    padding-left: 8px;
-    color: var(--text);
+  padding-left: 8px;
+  margin-left: auto;
+  color: var(--text);
 }
 
-/* ------------------------- */
 
-.chat-message.user .message-box{
-    background-color: var(--message);
-    color: var(--text);
-    display: grid;
-    grid-template-columns: 1fr 20px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    position: relative;
-    word-wrap: break-word;
-    font-size: 14px;
-    margin-bottom: 0.5rem;
+
+.chat-message.user .message-box {
+  position: relative;
+  display: grid;
+  padding: 10px;
+  margin-bottom: .5rem;
+  color: var(--text);
+  font-size: 14px;
+  word-wrap: break-word;
+  background-color: var(--message);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  grid-template-columns: 1fr 20px;
 }
 .chat-message.bot .message-box {
-    background-color: var(--message);
-    color: var(--text);
-    display: grid;
-    grid-template-columns: 1fr 20px;
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid #333;
-    position: relative;
-    font-size: 14px;
-    word-wrap: break-word;
-    margin-bottom: 0.5rem;
+  position: relative;
+  display: grid;
+  padding: 10px;
+  margin-bottom: .5rem;
+  color: var(--text);
+  font-size: 14px;
+  word-wrap: break-word;
+  background-color: var(--message);
+  border: 1px solid #333;
+  border-radius: 10px;
+
+  grid-template-columns: 1fr 20px;
 }
 
 .logo-message {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 .message-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-start;*/
+  width: 100%;
 }
 
 .message-icons {
-    display: flex;
-    justify-content: flex-end;
-    gap: 8px;
-    padding: 8px 0;
-    margin-top: 8px;
-    column-gap: 8px;
-}
+  display: flex;
+  /*justify-content: flex-end;*/
+  /*padding: 8px 0;*/
+  /*margin-top: 8px;*/
 
+  column-gap: 8px;
+  gap: 8px;
+}
 .botaoIcone2 {
-    padding: 0;
-    width: 24px;
-    height: 15px;
-    background: none;
-    border: none;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 15px;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .botaoIcone2:hover {
-    background-color: #e1ffc76b;
-    
+  background-color: #e1ffc76b;
 }
 
 .menuOpcoes {
-    z-index: 1000;
-    /* background-color: #f1f1f1; */
-    padding: 1rem;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  /* background-color: #f1f1f1; */
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 8px;
 }
 
 .menuOpcoes span {
-    color: black;
-    margin-bottom: 0.4rem;
-    margin-left: 0.4rem;
+  margin-bottom: .4rem;
+  margin-left: .4rem;
+  color: black;
+}
+.message-box-bot {
+  text-align: left;
+  background-color: var(--bot-message-bg);
 }
 
 
+
+.volume-icon {
+  padding-left: 8px;
+  margin-left: auto;
+}
