@@ -8,8 +8,8 @@ export const BtnLogin = ({nameBtn}) => {
         //     <button type="submit">{nameBtn}</button>
         //     </Col>
         <Container>
-            <Row className="justify-content-center">
-                <Col xs={6} sm={6} md={4} >
+            <Row className="justify-content-center ">
+                <Col xs={6} sm={6} md={6} lg={6} xl={6}>
                     <Button type="submit" className="w-100 btn-custom">
                         {nameBtn}
                     </Button>

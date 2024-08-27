@@ -5,6 +5,7 @@
     height: 100vh;
     background-image: url('../../img/Fundo.jpg');
     background-repeat: no-repeat center;
-    background-position: center;
-    background-size: 1280px 585px;
+    background-position: bottom;
+    background-size: 100%;
+    
 }
