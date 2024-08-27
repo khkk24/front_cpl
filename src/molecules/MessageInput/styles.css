@@ -68,6 +68,14 @@
   color: white;
 }
 
+.custom-textarea::-webkit-input-placeholder {
+    color: #888888;
+}
+/* .custom-textarea:-moz-placeholder {
+    color: black;
+    
+} */
+
 @media (max-width: 768px) {
   .message-container {
     max-width: 100%;
